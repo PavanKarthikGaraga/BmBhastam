@@ -1,0 +1,35 @@
+.nav-component{
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    border-bottom: 1px solid green;
+}
+.nav-component-in{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-component-in-one{
+    margin-left: 1rem;
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-component-in-one h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: Inter;
+}
+.nav-component-in-one img{
+    object-fit: cover;
+    width: 100%;
+}
+.nav-component-in-two{
+    width: 10%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
