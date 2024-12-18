@@ -12,16 +12,137 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 1px;
+    overflow: hidden;
 }
 .dashboard-component-icon-sidebar {
     width: 5%;
     background: #4AC41B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 0.5rem; */
 }
+.dashboard-component-icon-sidebar-opt {
+    padding: 1rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.dashboard-component-icon-sidebar-opt:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
 .dashboard-component-options-sidebar {
     width: 20%;
+    padding: 1rem 0;
     background: #91D477;
 }
+
+.dashboard-component-options-sidebar-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.dashboard-component-options-sidebar-opt {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 10px; 
+    margin: auto; 
+    cursor: pointer; 
+    transition: ease-in-out 0.3s; 
+    background: #4AC41B;
+    width: 70%;
+    border-radius: 1rem;
+    font-weight: bold;
+    gap: 0.4rem;
+    border: .1rem solid #333;
+}
+
+.dashboard-component-options-sidebar-opt:hover {
+    transform: translateY(-0.3rem);
+}
+
+
+.dashboard-component-icon-sidebar-opt.active {
+    background-color: #91D477;
+}
+
+.dashboard-component-options-sidebar-opt.active {
+    background-color: #91D477;
+}
+
+
 .dashboard-component-content {
     flex: 1;
+    padding: 1rem;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 100px);
+}
+
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333; 
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block; 
+    color: #555; 
+}
+
+input[type="text"],
+select {
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc; 
+    border-radius: 0.5rem; 
+    font-size: 1rem;
+    margin: auto;
+}
+
+input[type="number"]{
+    width: 30%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc; 
+    border-radius: 0.5rem; 
+    font-size: 1rem;
+    margin: auto;
+}
+
+select {
+    background: #fff; 
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border: 0.1rem solid #4AC41B; 
+    outline: none; 
+}
+
+div > h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
