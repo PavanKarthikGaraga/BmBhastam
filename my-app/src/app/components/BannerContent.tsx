@@ -7,11 +7,11 @@ function BannerContent() {
         return Array.from({ length: count }, (_, index) => (
             <div key={index} className='content-container'>
                 <h3>Banner {index + 1}</h3>
-                <label>Banner ID</label>
+                <label className='content-label'>Banner ID</label>
                 <input type="text" placeholder="Banner ID" />
-                <label>Banner URL</label>
+                <label className='content-label'>Banner URL</label>
                 <input type="text" placeholder="Banner URL" />
-                <label>Status</label>
+                <label className='content-label'>Status</label>
                 <select>
                     <option>Status</option>
                 </select>
@@ -22,7 +22,7 @@ function BannerContent() {
     return (
         <div>
             <h1>Banner Page</h1>
-            <label>Count</label>
+            <label className='content-label'>Count</label>
             <input 
                 type="number" 
                 value={count} 

@@ -7,13 +7,13 @@ function BrandContent() {
         return Array.from({ length: count }, (_, index) => (
             <div key={index} className='content-container'>
                 <h3>Brand {index + 1}</h3>
-                <label>Brand ID</label>
+                <label className='content-label'>Brand ID</label>
                 <input type="text" placeholder="Brand ID" />
-                <label>Brand URL</label>
+                <label className='content-label'>Brand URL</label>
                 <input type="text" placeholder="Brand URL" />
-                <label>Brand Name</label>
+                <label className='content-label'>Brand Name</label>
                 <input type="text" placeholder="Brand Name" />
-                <label>Status</label>
+                <label className='content-label'>Status</label>   
                 <select>
                     <option>Status</option>
                 </select>
@@ -24,7 +24,7 @@ function BrandContent() {
     return (
         <div>
             <h1>Brand Page</h1>
-            <label>Count</label>
+            <label className='content-label'>Count</label>
             <input 
                 type="number" 
                 value={count} 

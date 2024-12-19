@@ -11,6 +11,9 @@ import { useState } from 'react';
 import BannerContent from "../components/BannerContent";
 import BrandContent from "../components/BrandContent";
 import LayerContent from "../components/LayerContent";
+import GifContent from "../components/GifContent";
+import HelpContent from "../components/HelpContent";
+import NotificationContent from "../components/NotificationContent";
 
 export default function Dashboard() {
     const [selectedIcon, setSelectedIcon] = useState('circles');
@@ -70,22 +73,22 @@ export default function Dashboard() {
                         </div>}
                     {selectedIcon === 'profile' && 
                         <div className='dashboard-component-options-sidebar-in'>
-                            <div className="dashboard-component-options-sidebar-opt active">
+                            <div className="dashboard-component-options-sidebar-opt active" onClick={() => handleOptionClick('gif')}>
                                 <GiCheckeredDiamond />Promotion Gif
                             </div>
-                            <div className="dashboard-component-options-sidebar-opt">
+                            <div className="dashboard-component-options-sidebar-opt" onClick={() => handleOptionClick('help')}>
                                 <TbHelpSquareFilled />Help Center
                             </div>
                         </div>}
                     {selectedIcon === 'notifications' && 
                         <div className='dashboard-component-options-sidebar-in'>
-                            <div className="dashboard-component-options-sidebar-opt active">
+                            <div className="dashboard-component-options-sidebar-opt active" onClick={() => handleOptionClick('notification')}>
                                 <MdNotificationsActive />Notification
                             </div>
                         </div>}
                     {selectedIcon === 'delivery' && 
                         <div className='dashboard-component-options-sidebar-in'>
-                            <div className="dashboard-component-options-sidebar-opt active">
+                            <div className="dashboard-component-options-sidebar-opt active" onClick={() => handleOptionClick('delivery')}>
                                 <TbTruckDelivery />Delivery
                             </div>
                         </div>}
@@ -94,6 +97,9 @@ export default function Dashboard() {
                     {selectedOption === 'banners' && <BannerContent />}
                     {selectedOption === 'brands' && <BrandContent />}
                     {selectedOption === 'layerStyle' && <LayerContent />}
+                    {selectedOption === 'gif' && <GifContent />}
+                    {selectedOption === 'help' && <HelpContent />}
+                    {selectedOption === 'notification' && <NotificationContent />}
                 </div>
             </div>
         </div>
