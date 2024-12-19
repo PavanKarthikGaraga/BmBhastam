@@ -7,7 +7,7 @@ import { TbTruckDelivery, TbShoppingBagCheck, TbHelpSquareFilled } from "react-i
 import { GiVerticalBanner, GiCheckeredDiamond } from "react-icons/gi";
 import './dashboard.css'
 import { useState } from 'react';
-
+import Delivery from './components/delivery/delivery';
 import BannerContent from "../components/BannerContent";
 import BrandContent from "../components/BrandContent";
 import LayerContent from "../components/LayerContent";
@@ -100,6 +100,7 @@ export default function Dashboard() {
                     {selectedOption === 'gif' && <GifContent />}
                     {selectedOption === 'help' && <HelpContent />}
                     {selectedOption === 'notification' && <NotificationContent />}
+                    {selectedOption === 'delivery' && <Delivery />}
                 </div>
             </div>
         </div>

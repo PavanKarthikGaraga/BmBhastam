@@ -94,7 +94,7 @@
     flex-direction: column;
     /* align-items: center; */
 }
-
+/*
 h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -118,9 +118,7 @@ select {
     border: 1px solid #ccc; 
     border-radius: 1rem; 
     font-size: 1rem;
-    border: 0.1rem solid #4AC41B; 
-
-    /* margin: auto; */
+    border: 0.1rem solid #4AC41B;
 }
 
 input[type="number"]{
@@ -131,8 +129,6 @@ input[type="number"]{
     border-radius: 0.5rem; 
     font-size: 1rem;
     border: 0.1rem solid #4AC41B; 
-
-    /* margin: auto; */
 }
 
 select {
@@ -157,4 +153,4 @@ div > h3 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-}
+}  */
