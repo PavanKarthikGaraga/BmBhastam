@@ -3,7 +3,7 @@ import './overview.css';
 
 function Overview() {
     return (
-        <div className='overview-component'>
+        <div className='overview-component' suppressHydrationWarning>
             <div className="overview-component-in">
                 <div className="overview-component-in-heading">
                     <h1>Overview</h1>
