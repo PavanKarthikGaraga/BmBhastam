@@ -1,0 +1,70 @@
+.notification-component {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-component-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-component-in-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.notification-component-in-heading h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.notifcation-component-in-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.notfication-form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.notfication-form-group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.notfication-form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #4AC41B;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.notfication-form-group input:focus {
+    outline: none;
+    border-color: #45b118;
+    box-shadow: 0 0 0 2px rgba(74, 196, 27, 0.2);
+}
+
+.content-label {
+    color: #333;
+}

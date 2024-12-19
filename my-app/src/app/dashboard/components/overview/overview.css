@@ -1,0 +1,153 @@
+.overview-component {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-component-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-component-in-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.overview-component-in-heading h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.overview-component-in-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Stats Grid */
+.overview-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.overview-stats-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #4AC41B;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stats-card-header {
+    font-size: 1rem;
+    color: #666;
+}
+
+.stats-card-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.stats-card-change {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.stats-card-change.positive {
+    color: #4AC41B;
+}
+
+.stats-card-change.negative {
+    color: #ff4444;
+}
+
+/* Charts Section */
+.overview-charts-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.overview-chart-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #4AC41B;
+}
+
+.chart-header {
+    margin-bottom: 1rem;
+}
+
+.chart-header h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.chart-body {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem 0;
+}
+
+/* Demo Chart Styles */
+.demo-chart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.chart-bar {
+    width: 40px;
+    background: #4AC41B;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s ease;
+}
+
+.demo-line-chart {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-bottom: 2px solid #eee;
+}
+
+.line-point {
+    width: 10px;
+    height: 10px;
+    background: #4AC41B;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.line-point::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #4AC41B;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

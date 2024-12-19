@@ -1,0 +1,92 @@
+.help-component {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-component-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-component-in-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.help-component-in-heading h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.help-component-in-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.help-component-in-body-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.help-form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.help-form-group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.help-form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #4AC41B;
+    border-radius: 45px;
+    font-size: 1rem;
+}
+
+.help-form-group input:focus {
+    outline: none;
+    border-color: #45b118;
+    box-shadow: 0 0 0 2px rgba(74, 196, 27, 0.2);
+}
+
+.help-form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #4AC41B;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    min-height: 150px;
+    resize: vertical;
+}
+
+.help-form-group textarea:focus {
+    outline: none;
+    border-color: #45b118;
+    box-shadow: 0 0 0 2px rgba(74, 196, 27, 0.2);
+}
+
+.content-label {
+    color: #333;
+}

@@ -7,17 +7,18 @@ import { TbTruckDelivery, TbShoppingBagCheck, TbHelpSquareFilled } from "react-i
 import { GiVerticalBanner, GiCheckeredDiamond } from "react-icons/gi";
 import './dashboard.css'
 import { useState } from 'react';
+import Overview from './components/overview/overview';
 import Delivery from './components/delivery/delivery';
-import BannerContent from "../components/BannerContent";
-import BrandContent from "../components/BrandContent";
-import LayerContent from "../components/LayerContent";
-import GifContent from "../components/GifContent";
-import HelpContent from "../components/HelpContent";
-import NotificationContent from "../components/NotificationContent";
+import BannerContent from "./components/banner/BannerContent";
+import BrandContent from "./components/brand/BrandContent";
+import LayerContent from "./components/layer/LayerContent";
+import GifContent from "./components/gif/GifContent";
+import HelpContent from "./components/help/HelpContent";
+import NotificationContent from "./components/notifcation/NotificationContent";
 
 export default function Dashboard() {
     const [selectedIcon, setSelectedIcon] = useState('circles');
-    const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOption, setSelectedOption] = useState('Overview');
 
     const handleIconClick = (option: string) => {
         setSelectedIcon(option);
@@ -55,7 +56,7 @@ export default function Dashboard() {
                 <div className="dashboard-component-options-sidebar">
                     {selectedIcon === 'circles' && 
                         <div className='dashboard-component-options-sidebar-in'>
-                            <div className='dashboard-component-options-sidebar-opt active'>
+                            <div className='dashboard-component-options-sidebar-opt active' onClick={ () => handleOptionClick('Overview')}>
                                 <CgMenuGridO />Over View
                             </div>
                         </div>}
@@ -94,6 +95,7 @@ export default function Dashboard() {
                         </div>}
                 </div>
                 <div className="dashboard-component-content">
+                    {selectedOption === 'Overview' && <Overview />}
                     {selectedOption === 'banners' && <BannerContent />}
                     {selectedOption === 'brands' && <BrandContent />}
                     {selectedOption === 'layerStyle' && <LayerContent />}

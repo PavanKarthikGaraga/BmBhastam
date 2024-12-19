@@ -1,0 +1,108 @@
+.banner-component {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-component-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-component-in-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.banner-component-in-heading h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.banner-component-in-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.banner-component-in-body-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #4AC41B;
+    border-radius: 8px;
+}
+
+.banner-form-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner-form-heading h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.banner-form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.banner-form-group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.banner-form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #4AC41B;
+    border-radius: 45px;
+    font-size: 1rem;
+}
+
+.banner-form-group input:focus {
+    outline: none;
+    border-color: #45b118;
+    box-shadow: 0 0 0 2px rgba(74, 196, 27, 0.2);
+}
+
+.banner-form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #4AC41B;
+    border-radius: 45px;
+    font-size: 1rem;
+}
+
+.banner-form-group select:focus {
+    outline: none;
+    border-color: #45b118;
+    box-shadow: 0 0 0 2px rgba(74, 196, 27, 0.2);
+}
+
+.content-label {
+    color: #333;
+}
